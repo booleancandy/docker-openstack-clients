@@ -11,7 +11,9 @@ passing through the OpenStack environment variables.
         -e OS_TENANT_NAME=$OS_TENANT_NAME \
         -e OS_USERNAME=$OS_USERNAME \
         -e OS_PASSWORD=$OS_PASSWORD \
-        -t -i --rm booleancandy/openstack-clients nova flavor-list
+        -t -i --rm \
+        booleancandy/openstack_clients \
+        nova flavor-list
     +-----+------------------+-----------+------+-----------+------+-------+-------------+-----------+
     | ID  | Name             | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
     +-----+------------------+-----------+------+-----------+------+-------+-------------+-----------+
